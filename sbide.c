@@ -1742,7 +1742,7 @@ Ihandle* create_main_dialog(Ihandle *config)
   IupSetAttribute(lbl_statusbar, "EXPAND", "HORIZONTAL");
   IupSetAttribute(lbl_statusbar, "PADDING", "10x5");
 
-  item_new = IupItem("&New\tCtrl+N", NULL);
+  item_new = IupItem("&New\t\t\tCtrl+N", NULL);
   IupSetAttribute(item_new, "IMAGE", "IUP_FileNew");
   IupSetCallback(item_new, "ACTION", (Icallback)item_new_action_cb);
   btn_new = IupButton(NULL, NULL);
@@ -1752,7 +1752,7 @@ Ihandle* create_main_dialog(Ihandle *config)
   IupSetAttribute(btn_new, "TIP", "New (Ctrl+N)");
   IupSetAttribute(btn_new, "CANFOCUS", "No");
 
-  item_open = IupItem("&Open...\tCtrl+O", NULL);
+  item_open = IupItem("&Open...\t\t\tCtrl+O", NULL);
   IupSetAttribute(item_open, "IMAGE", "IUP_FileOpen");
   IupSetCallback(item_open, "ACTION", (Icallback)item_open_action_cb);
   btn_open = IupButton(NULL, NULL);
@@ -1762,7 +1762,7 @@ Ihandle* create_main_dialog(Ihandle *config)
   IupSetAttribute(btn_open, "TIP", "Open (Ctrl+O)");
   IupSetAttribute(btn_open, "CANFOCUS", "No");
 
-  item_save = IupItem("&Save\tCtrl+S", NULL);
+  item_save = IupItem("&Save\t\t\tCtrl+S", NULL);
   IupSetAttribute(item_save, "NAME", "ITEM_SAVE");
   IupSetAttribute(item_save, "IMAGE", "IUP_FileSave");
   IupSetCallback(item_save, "ACTION", (Icallback)item_save_action_cb);
